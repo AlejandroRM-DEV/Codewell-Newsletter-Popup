@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	body {
+		font-family: "Work Sans";
+		background-image: url("../Assets/Background.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	main {
+		@apply flex justify-center items-center h-screen;
+	}
+
+	.card {
+		@apply bg-white rounded-lg max-w-screen-sm;
+	}
+
+	.card__header {
+		@apply rounded-t-lg p-16 bg-blue-600 bg-[url('../Assets/Pattern.png')];
+	}
+
+	.card__title {
+		@apply text-4xl text-center font-black text-white;
+	}
+
+	.card__body {
+		@apply p-8;
+	}
+
+	.card__body > * {
+		@apply mb-4;
+	}
+
+	.card__text {
+		@apply text-center text-[#767b88];
+	}
+
+	.btn {
+		@apply rounded mx-2 px-8 py-2 font-semibold;
+	}
+
+	.btn--blue {
+		@apply text-white bg-blue-600;
+	}
+}
